@@ -11,7 +11,9 @@ This Project Have 3 Sections
 * Political Opinion Forecaster with Python
 
 Project Article : will be added.
+
 Dataset : https://www.kaggle.com/yemregundogmus/turkey-political-opinions
+
 Project Notebooks 
 * https://www.kaggle.com/yemregundogmus/political-opinion-with-machine-learning
 * https://www.kaggle.com/yemregundogmus/forecast-on-turkish-political-opinions
