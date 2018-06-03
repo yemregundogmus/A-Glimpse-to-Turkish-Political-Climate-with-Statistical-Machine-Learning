@@ -16,4 +16,4 @@ Dataset : https://www.kaggle.com/yemregundogmus/turkey-political-opinions
 
 Project Notebooks 
 * https://www.kaggle.com/yemregundogmus/political-opinion-with-machine-learning
-* https://www.kaggle.com/yemregundogmus/forecast-on-turkish-political-opinions
+* https://www.kaggle.com/yemregundogmus/forecast-on-turkish-political-opinions 
