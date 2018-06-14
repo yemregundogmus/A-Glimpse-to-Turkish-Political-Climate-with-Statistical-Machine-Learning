@@ -1,0 +1,261 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<title>Siyasi Analizci</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="{% static 'images/icons/favicon.ico' %}"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/animate/animate.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/css-hamburgers/hamburgers.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/select2/select2.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/util.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+<!--===============================================================================================-->
+</head>
+<body>
+	<div class="bg-contact3" style="background-image: url('static/images/bg-01.jpg');">
+		<div class="container-contact3">
+			<div class="wrap-contact3">
+
+                    <span class="contact3-form-title">
+                            SİYASİ ANALİZCİ
+                        </span>
+
+
+<img id="preloader" style="display:none; margin-left:20%;" src="{% static 'images/preloader.gif' %}" alt="">
+
+				<form id="form" action="sonuc" method="POST" class="contact3-form validate-form">{% csrf_token %}
+
+					<div class="wrap-input3 input3-select">
+						<div>
+							<select name="soru1" class="selection-2" >
+								<option>Cinsiyetiniz</option>
+								<option value="0">Erkek</option>
+								<option value="1">Kadın</option>
+							</select>
+						</div>
+						<span class="focus-input3"></span>
+					</div>
+
+
+
+					<div class="wrap-input3 input3-select">
+						<div>
+							<select name="soru2" class="selection-2" >
+								<option>Yaşınız</option>
+								<option value="1">0-18</option>
+								<option value="2">18-30</option>
+                                <option value="3">30-50</option>
+                                <option value="4">50-60</option>
+                                <option value="5">60+</option>
+							</select>
+						</div>
+						<span class="focus-input3"></span>
+                    </div>
+               
+                    
+                    <div class="wrap-input3 input3-select">
+						<div>
+							<select name="soru3" class="selection-2" >
+								<option>Yaşadığınız Bölge</option>
+								<option value="1">Marmara</option>
+								<option value="2">Ege</option>
+                                <option value="3">Karadeniz</option>
+                                <option value="4">Akdeniz</option>
+                                <option value="5">İç Anadolu</option>
+                                <option value="6">Doğu Anadolu</option>
+                                <option value="7">Güneydoğu Anadolu</option>
+							</select>
+						</div>
+						<span class="focus-input3"></span>
+                    </div> 
+
+               
+                    
+                    <div class="wrap-input3 input3-select">
+						<div>
+							<select name="soru4" class="selection-2" >
+								<option>Eğitim Seviyeniz</option>
+								<option value="1">İlkokul</option>
+								<option value="2">Ortaokul</option>
+                                <option value="3">Lise</option>
+                                <option value="4">Önlisans</option>
+                                <option value="5">Lisans</option>
+                                <option value="6">Lisansüstü</option>
+							</select>
+						</div>
+						<span class="focus-input3"></span>
+                    </div>                
+                    
+                    <div class="wrap-input3 input3-select">
+						<div>
+							<select name="soru5" class="selection-2" >
+								<option>Ekonomik Durumumuz Sizce İyi Mi?</option>
+								<option value="1">Evet</option>
+								<option value="0">Hayır</option>
+							</select>
+						</div>
+						<span class="focus-input3"></span>
+                    </div>                
+                                 
+                    <div class="wrap-input3 input3-select">
+						<div>
+							<select name="soru6" class="selection-2" >
+								<option>Eğitimde Reform Gerekiyor Mu?</option>
+								<option value="1">Evet</option>
+								<option value="0">Hayır</option>
+							</select>
+						</div>
+						<span class="focus-input3"></span>
+                    </div>                
+                    
+                    <div class="wrap-input3 input3-select">
+						<div>
+							<select name="soru7" class="selection-2" >
+								<option>Özelleştirmeye Karşı Çıkar Mısınız?</option>
+								<option value="1">Evet</option>
+								<option value="0">Hayır</option>
+							</select>
+						</div>
+						<span class="focus-input3"></span>
+                    </div>                
+                    
+                    <div class="wrap-input3 input3-select">
+						<div>
+							<select name="soru8" class="selection-2" >
+								<option>İdam Cezası Gelmeli Mi?</option>
+								<option value="1">Evet</option>
+								<option value="0">Hayır</option>
+							</select>
+						</div>
+						<span class="focus-input3"></span>
+                    </div> 
+
+            
+                    <div class="wrap-input3 input3-select">
+						<div>
+							<select name="soru9" class="selection-2" >
+								<option>Gazetecilerimizi Tarafsız Buluyor Musunuz?</option>
+								<option value="1">Evet</option>
+								<option value="0">Hayır</option>
+							</select>
+						</div>
+						<span class="focus-input3"></span>
+                    </div> 
+
+
+                    <div class="wrap-input3 input3-select">
+						<div>
+							<select name="soru10" class="selection-2" >
+								<option>22'den Sonra İçki Yasağını Destekliyor Musunuz?</option>
+								<option value="1">Evet</option>
+								<option value="0">Hayır</option>
+							</select>
+						</div>
+						<span class="focus-input3"></span>
+                    </div> 
+
+
+                    <div class="wrap-input3 input3-select">
+						<div>
+							<select name="soru11" class="selection-2" >
+								<option>Daha Laik Bir Devlette Yaşamak İster Misiniz?</option>
+								<option value="1">Evet</option>
+								<option value="0">Hayır</option>
+							</select>
+						</div>
+						<span class="focus-input3"></span>
+                    </div> 
+
+
+
+                    <div class="wrap-input3 input3-select">
+						<div>
+							<select name="soru12" class="selection-2" >
+								<option>Kürtaj Yasağını Destekliyor Musunuz?</option>
+								<option value="1">Evet</option>
+								<option value="0">Hayır</option>
+							</select>
+						</div>
+						<span class="focus-input3"></span>
+                    </div> 
+
+
+
+                    <div class="wrap-input3 input3-select">
+						<div>
+							<select name="soru13" class="selection-2" >
+								<option>Ohal Özgürlükleri Kısıtlıyor Mu?</option>
+								<option value="1">Evet</option>
+								<option value="0">Hayır</option>
+							</select>
+						</div>
+						<span class="focus-input3"></span>
+                    </div> 
+
+
+                    
+
+                    <div class="wrap-input3 input3-select">
+						<div>
+							<select name="soru14" class="selection-2" >
+								<option>Meclise Yeni Bir Partinin Girmesini İster Misiniz?</option>
+								<option value="1">Evet</option>
+								<option value="0">Hayır</option>
+							</select>
+						</div>
+						<span class="focus-input3"></span>
+                    </div> 
+
+
+					<div style="margin-left:34%" class="container-contact3-form-btn">
+						<button id="buton" class="contact3-form-btn">
+							ANALİZ ET
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<script src="{% static 'vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'vendor/bootstrap/js/popper.js' %}"></script>
+	<script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'vendor/select2/select2.min.js' %}"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="{% static 'js/main.js' %}"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+</body>
+</html>
