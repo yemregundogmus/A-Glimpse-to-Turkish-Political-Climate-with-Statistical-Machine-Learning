@@ -11,6 +11,8 @@ This Project Have 4 Sections
 * Political Opinion Forecaster with Python
 * Real-Time Forecaster Web Site
 
+Real Time Web Site : http://siyasalyonelim.com/
+
 Project Article : will be added.
 Real-Time Web Site : Siyasalyonelim.com
 Dataset : https://www.kaggle.com/yemregundogmus/turkey-political-opinions
