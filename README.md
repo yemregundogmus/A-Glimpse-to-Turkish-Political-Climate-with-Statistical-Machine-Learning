@@ -13,7 +13,7 @@ This Project Have 4 Sections
 
 Real Time Web Site : http://siyasalyonelim.com/
 
-Project Article : will be added.
+Project Article : https://ieeexplore.ieee.org/document/8566403
 Real-Time Web Site : Siyasalyonelim.com
 Dataset : https://www.kaggle.com/yemregundogmus/turkey-political-opinions
 
